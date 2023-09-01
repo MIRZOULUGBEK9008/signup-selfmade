@@ -37,20 +37,23 @@
 
   <!-- SECTION-FORM -->
   <section class="section-form">
-    <h2 class="section-form__title visually-hidden">Sign up form</h2>
     <div class="section-form__container container">
-      <form class="section-form__form form">
-        <div class="form__input-wrapper">
-          <input class="form__input form__input--username" id="username" name="username" type="text" autocomplete="off"
-            minlength="4" required="*">
-          <span class="form__input-label">Username*</span>
-          <i class="form__valid-line"></i>
-        </div>
-        <div class="form__input-wrapper">
-          <input class="form__input form__input--password" id="password" name="password" type="password"
-            autocomplete="off" minlength="4" maxlength="8" size="8" required="*">
-          <span class="form__input-label">Password*</span>
-          <i class="form__valid-line"></i>
+      <form class="section-form__form form" id="form">
+        <h2 id="title" class="section-form__title">Sign up</h2>
+        <div class="section-form__form-inner">
+          <div class="form__input-wrapper">
+            <input class="form__input form__input--username" id="username" name="username" type="text"
+              autocomplete="off" minlength="4" required="*">
+            <span class="form__input-label">Username*</span>
+            <i class="form__valid-line"></i>
+          </div>
+          <div class="form__input-wrapper">
+            <input class="form__input form__input--password" id="password" name="password" type="password"
+              autocomplete="off" minlength="6" maxlength="12" size="12" required="*">
+            <span class="form__input-label">Password*</span>
+            <i class="form__valid-line"></i>
+          </div>
+          <button class="form__button" type="submit" id="button">Sign up</button>
         </div>
       </form>
     </div>
